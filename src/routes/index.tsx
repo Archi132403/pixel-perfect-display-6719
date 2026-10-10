@@ -66,24 +66,24 @@ const comparisonRows = [
 
 const questions = [
   {
-    question: "Does ThriveSparrow replace an existing HR system?",
+    question: "Will I still have to chase employees to complete surveys?",
     answer:
-      "It is positioned around employee engagement and performance workflows, rather than as a replacement for every HR system. Ask the vendor how it fits with your HRIS and existing tools.",
+      "Not every reminder needs to be another email on your to-do list. ThriveSparrow lets you schedule recurring surveys and automate reminders, so your team can spend less time following up and more time understanding the feedback.",
   },
   {
-    question: "Can both products manage engagement and performance?",
+    question: "What happens when it's time for performance reviews?",
     answer:
-      "Yes. Both products support employee engagement and performance work. Their specific tools, plan inclusions, and fit for your organization are worth comparing in a live walkthrough.",
+      "Instead of starting from scratch each cycle, you can use structured review templates, set up assessments, and schedule reminders. Everyone has a clearer idea of what needs to happen next.",
   },
   {
-    question: "Can ThriveSparrow automate every HR task?",
+    question: "We collect employee feedback. But what happens after that?",
     answer:
-      "No single platform should be assumed to automate every HR task. ThriveSparrow describes automation for recurring surveys, reminders, reporting, and parts of performance workflows; confirm the details against your processes.",
+      "Feedback is only useful when something changes. ThriveSparrow helps teams create action plans, assign owners, and track progress, so employee concerns have a clearer path toward follow-up.",
   },
   {
-    question: "How should we decide which product fits our organization?",
+    question: "How is this different from Culture Amp?",
     answer:
-      "Map your must-have workflows, integrations, reporting needs, and team capacity. Then ask each vendor to demonstrate those exact scenarios and confirm pricing, implementation, and plan inclusions in writing.",
+      "Both platforms offer surveys, performance management, and action planning. Culture Amp stands out for its research-backed surveys and benchmarking. ThriveSparrow brings recurring employee workflows together, with Kudos recognition and rewards as an additional option. The best fit depends on which experience matters most to your team.",
   },
 ];
 
@@ -328,7 +328,7 @@ function Index() {
 
       <section className="faq-section section-pad" id="faqs">
         <div className="section-kicker"><span>08</span><span>Good questions to ask</span></div>
-        <div className="faq-layout"><h2>Before you choose.</h2><div className="faq-list">{questions.map((item, index) => <details className="faq-item" key={item.question} open={index === 0}><summary><span>{item.question}</span><span className="faq-icon"><ChevronDown aria-hidden="true" /></span></summary><p>{item.answer}</p></details>)}</div></div>
+        <div className="faq-layout"><h2>A few things you might be wondering.</h2><div className="faq-list">{questions.map((item, index) => <details className="faq-item" key={item.question} open={index === 0}><summary><span>{item.question}</span><span className="faq-icon"><ChevronDown aria-hidden="true" /></span></summary><p>{item.answer}</p></details>)}</div></div>
       </section>
 
       <section className="final-cta section-pad" id="demo">
