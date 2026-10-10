@@ -117,8 +117,7 @@ function Index() {
     <main className="site-shell">
       <header className="site-header">
         <a className="wordmark" href="#top" aria-label="ThriveSparrow comparison home">
-          <span className="wordmark-mark" aria-hidden="true">t</span>
-          <span>ThriveSparrow</span>
+          <img className="brand-logo" src="/thrivesparrow-logo.png" alt="ThriveSparrow" />
         </a>
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#top">Overview</a>
@@ -265,7 +264,7 @@ function Index() {
         </div>
         <div className="comparison-wrap" role="region" aria-label="Product comparison table" tabIndex={0}>
           <table className="comparison-table">
-            <thead><tr><th scope="col">What to compare</th><th scope="col"><span className="table-brand brand-thrive"><i>t</i> ThriveSparrow</span></th><th scope="col"><span className="table-brand brand-culture"><i>c</i> Culture Amp</span></th></tr></thead>
+            <thead><tr><th scope="col">What to compare</th><th scope="col"><span className="table-brand brand-thrive"><img className="table-brand-logo" src="/thrivesparrow-logo.png" alt="ThriveSparrow" /></span></th><th scope="col"><span className="table-brand brand-culture"><i>c</i> Culture Amp</span></th></tr></thead>
             <tbody>{comparisonRows.map((row) => <tr key={row.label}><th scope="row">{row.label}</th><td>{row.thrive}</td><td>{row.culture}</td></tr>)}</tbody>
           </table>
         </div>
@@ -341,7 +340,7 @@ function Index() {
       </section>
 
       <footer className="site-footer">
-        <a className="wordmark" href="#top"><span className="wordmark-mark" aria-hidden="true">t</span><span>ThriveSparrow</span></a>
+        <a className="wordmark" href="#top"><img className="brand-logo" src="/thrivesparrow-logo.png" alt="ThriveSparrow" /></a>
         <span>Independent product marketing concept · Not an official vendor website.</span>
         <a href="#top" className="back-top">Back to top ↑</a>
       </footer>
