@@ -1,0 +1,3 @@
+- [ ] Replace the home placeholder with the complete ThriveSparrow vs Culture Amp comparison page.
+- [ ] Add the editorial design system, responsive navigation, working links, accurate sourcing, and accessible interactions.
+- [ ] Verify route, build, tests, and desktop/mobile rendering.
