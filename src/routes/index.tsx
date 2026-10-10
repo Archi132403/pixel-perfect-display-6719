@@ -128,7 +128,7 @@ function Index() {
           <a href="#faqs">FAQs</a>
         </nav>
         <Button asChild className="nav-cta">
-          <a href="https://www.thrivesparrow.com/demo" target="_blank" rel="noreferrer">
+          <a href="https://www.thrivesparrow.com/request-a-demo" target="_blank" rel="noreferrer">
             Book a demo <ArrowUpRight aria-hidden="true" />
           </a>
         </Button>
@@ -148,7 +148,7 @@ function Index() {
           </p>
           <div className="hero-actions">
             <Button asChild size="lg" className="button-main">
-              <a href="https://www.thrivesparrow.com/demo" target="_blank" rel="noreferrer">
+              <a href="https://www.thrivesparrow.com/request-a-demo" target="_blank" rel="noreferrer">
                 See ThriveSparrow in action <ArrowUpRight aria-hidden="true" />
               </a>
             </Button>
@@ -250,6 +250,7 @@ function Index() {
           <h2>Less time compiling feedback.<br /><em>More time to understand it.</em></h2>
           <div className="proof-number"><strong>70%</strong><span>less manual feedback-related work</span></div>
           <p className="proof-description">Dyninno reported reducing manual feedback-related work after centralizing employee surveys and automating reporting through ThriveSparrow.</p>
+          <p className="proof-timeline">In its published case study, Dyninno says feedback-related processes previously taking <strong>2–5 days</strong> were reduced to <strong>1–2 business days</strong>.</p>
           <p className="proof-disclaimer">Customer-reported outcome published by ThriveSparrow. Not a direct comparison with Culture Amp.</p>
           <a className="text-link" href="https://www.thrivesparrow.com/customers/dyninno" target="_blank" rel="noreferrer">Read Dyninno&apos;s story <ArrowUpRight aria-hidden="true" /></a>
         </div>
@@ -268,28 +269,44 @@ function Index() {
             <tbody>{comparisonRows.map((row) => <tr key={row.label}><th scope="row">{row.label}</th><td>{row.thrive}</td><td>{row.culture}</td></tr>)}</tbody>
           </table>
         </div>
-        <p className="comparison-note">A high-level guide, not an exhaustive feature audit. Product capabilities and availability can vary by plan and change over time; confirm details directly with each vendor.</p>
+        <p className="comparison-note">A high-level guide, not an exhaustive feature audit. Product capabilities and availability vary by plan; verify with each vendor. See the official ThriveSparrow and Culture Amp product pages for current details.</p>
+        <div className="buyer-guide" aria-labelledby="buyer-guide-heading">
+          <p className="buyer-guide-kicker">A PRACTICAL DECISION GUIDE</p>
+          <h3 id="buyer-guide-heading">Before you choose, put both platforms to the test.</h3>
+          <p className="buyer-guide-intro">Feature lists tell you what a platform offers. A product demo shows how it fits your team's workday. Ask both vendors to walk through the same three tasks.</p>
+          <div className="buyer-guide-grid">
+            <div><span>01 / LISTEN</span><h4>Run a recurring survey</h4><p>Can you schedule it, send reminders, and review feedback without rebuilding the process each time?</p></div>
+            <div><span>02 / REVIEW</span><h4>Coordinate a review cycle</h4><p>How do templates, deadlines, and reminders keep managers and employees on track?</p></div>
+            <div><span>03 / ACT</span><h4>Follow through on feedback</h4><p>Can you assign action owners and monitor progress without another spreadsheet?</p></div>
+          </div>
+          <p className="buyer-guide-conclusion">The better fit is the one that makes your team's most important work manageable—not simply the one with the longest feature list.</p>
+          <a className="text-link" href="https://www.thrivesparrow.com/request-a-demo" target="_blank" rel="noreferrer">See these workflows in ThriveSparrow <ArrowUpRight aria-hidden="true" /></a>
+        </div>
       </section>
 
       <section className="reviews-section section-pad" id="reviews">
-        <div className="section-kicker"><span>05</span><span>What customers say</span></div>
+        <div className="section-kicker"><span>05</span><span>Customers, in their own words</span></div>
         <div className="section-heading-row">
-          <h2>The features are one thing. The everyday experience is another.</h2>
-          <p>Selected customer-review themes offer another lens—not a universal verdict on either platform.</p>
+          <h2>Less chasing. More doing. In their own words.</h2>
+          <p>What individual G2 reviewers reveal about the everyday work behind surveys and performance cycles.</p>
         </div>
-        <div className="review-columns">
-          <article className="review-column review-thrive">
-            <h3><span className="review-logo">t</span> ThriveSparrow</h3>
-            <div className="review-theme"><span>APPRECIATED</span><p>Ease of administering surveys</p><p>Structured performance-review processes</p><p>Connected employee-engagement workflows</p></div>
-            <div className="review-theme review-caveat"><span>ALSO MENTIONED</span><p>Reporting and export customization limitations</p><p>Some integration constraints</p><p>Occasional workflow friction</p></div>
-          </article>
-          <article className="review-column review-culture">
-            <h3><span className="culture-logo">c</span> Culture Amp</h3>
-            <div className="review-theme"><span>APPRECIATED</span><p>Research-backed surveys and benchmarking</p><p>Detailed engagement analytics</p><p>Integrated talent and performance tools</p></div>
-            <div className="review-theme review-caveat"><span>ALSO MENTIONED</span><p>Some reviewers note navigation complexity</p><p>Lengthy performance forms in particular workflows</p><p>Concerns about packaging and renewal costs</p></div>
-          </article>
+        <div className="testimonial-grid">
+          <figure className="testimonial-card testimonial-thrive">
+            <div className="testimonial-top"><span>THRIVESPARROW</span><span>5/5 · G2</span></div>
+            <blockquote>“It made adoption across our organization seamless, with very little training required.”</blockquote>
+            <figcaption><strong>Chrisdie Mycel S.</strong><span>Organizational Development Officer · July 27, 2026</span></figcaption>
+          </figure>
+          <figure className="testimonial-card testimonial-thrive">
+            <div className="testimonial-top"><span>THRIVESPARROW</span><span>5/5 · G2</span></div>
+            <blockquote>“What I value most is how easy it is to administer surveys to large employee populations”</blockquote>
+            <figcaption><strong>Alyssa E.</strong><span>HR Manager · August 14, 2026</span></figcaption>
+          </figure>
         </div>
-        <p className="review-source">Selected review themes, not universal platform limitations. Based on <a href="https://www.g2.com/products/thrivesparrow/reviews" target="_blank" rel="noreferrer">ThriveSparrow reviews on G2 <ArrowUpRight aria-hidden="true" /></a> and <a href="https://www.g2.com/products/culture-amp/reviews" target="_blank" rel="noreferrer">Culture Amp reviews on G2 <ArrowUpRight aria-hidden="true" /></a>.</p>
+        <div className="competitor-voice">
+          <div><p className="competitor-voice-kicker">WHY WORKFLOW FIT MATTERS</p><h3>A Culture Amp customer's experience</h3><p>Even useful features can feel demanding when a workflow doesn't match the way a team operates.</p></div>
+          <figure><blockquote>“It sometimes felt like there was way too much to fill out, and a lot of it ended up being skipped or never used.”</blockquote><figcaption>Bryan M. · Head of IT · 2.5/5 on G2 · March 25, 2026</figcaption></figure>
+        </div>
+        <p className="review-source">Verbatim excerpts from selected G2 review screenshots gathered for this assignment. These are individual experiences, not a controlled head-to-head test or universal platform findings. Read the <a href="https://www.g2.com/products/thrivesparrow/reviews" target="_blank" rel="noreferrer">ThriveSparrow reviews <ArrowUpRight aria-hidden="true" /></a> and <a href="https://www.g2.com/products/culture-amp/reviews" target="_blank" rel="noreferrer">Culture Amp reviews <ArrowUpRight aria-hidden="true" /></a>.</p>
       </section>
 
       <section className="recognition-section section-pad" id="recognition">
@@ -300,13 +317,13 @@ function Index() {
 
       <section className="pricing-section section-pad" id="pricing">
         <div className="section-kicker"><span>07</span><span>Buying considerations</span></div>
-        <div className="section-heading-row pricing-heading"><h2>Find the setup that fits your team.</h2><p>Advertised ThriveSparrow annual-billing rates per employee. Use as a starting point, not a final quote.</p></div>
+        <div className="section-heading-row pricing-heading"><h2>Find the setup that fits your team.</h2><p>Selected published annual-billing rates per employee. Bundle plans are also offered; check current terms.</p></div>
         <div className="price-list">
           <div className="price-row"><span className="price-name"><i className="price-dot price-dot-coral" /> Kudos</span><span className="price-value"><strong>$2</strong><small>/ employee / month</small></span><span className="price-annotation">Recognition &amp; rewards</span></div>
           <div className="price-row"><span className="price-name"><i className="price-dot price-dot-blue" /> Engage</span><span className="price-value"><strong>$3</strong><small>/ employee / month</small></span><span className="price-annotation">Employee engagement</span></div>
           <div className="price-row"><span className="price-name"><i className="price-dot price-dot-ink" /> Performance</span><span className="price-value"><strong>$5</strong><small>/ employee / month</small></span><span className="price-annotation">Performance workflows</span></div>
         </div>
-        <p className="pricing-disclaimer">Annual-billing rates shown as advertised in this comparison brief. Confirm current pricing, plan inclusions, eligibility, and terms directly with ThriveSparrow. Actual pricing may vary; module prices are not added together here.</p>
+        <p className="pricing-disclaimer">Selected annual-billing rates from ThriveSparrow’s official pricing page (checked October 2026). Bundle offerings and inclusions vary; this is not a total cost comparison or a quote. Confirm current terms with the vendor.</p>
         <a className="text-link" href="https://www.thrivesparrow.com/pricing" target="_blank" rel="noreferrer">See current pricing from ThriveSparrow <ArrowUpRight aria-hidden="true" /></a>
       </section>
 
@@ -319,13 +336,13 @@ function Index() {
         <p className="section-kicker"><span>ONE LAST THING</span></p>
         <h2>Your next review cycle doesn&apos;t have to feel like your last.</h2>
         <p>See how ThriveSparrow brings employee surveys, performance reviews, and follow-ups into more structured workflows.</p>
-        <Button asChild size="lg" className="button-main final-button"><a href="https://www.thrivesparrow.com/demo" target="_blank" rel="noreferrer">See ThriveSparrow in action <CircleArrowRight aria-hidden="true" /></a></Button>
+        <Button asChild size="lg" className="button-main final-button"><a href="https://www.thrivesparrow.com/request-a-demo" target="_blank" rel="noreferrer">See ThriveSparrow in action <CircleArrowRight aria-hidden="true" /></a></Button>
         <span className="cta-footnote">A conversation about your team, your way of working.</span>
       </section>
 
       <footer className="site-footer">
         <a className="wordmark" href="#top"><span className="wordmark-mark" aria-hidden="true">t</span><span>ThriveSparrow</span></a>
-        <span>A thoughtful comparison for people teams.</span>
+        <span>Independent product marketing concept · Not an official vendor website.</span>
         <a href="#top" className="back-top">Back to top ↑</a>
       </footer>
     </main>
